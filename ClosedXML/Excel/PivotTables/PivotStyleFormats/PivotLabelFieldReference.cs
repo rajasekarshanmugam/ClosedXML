@@ -28,11 +28,9 @@ namespace ClosedXML.Excel
 
         internal override IEnumerable<Int32> Match(XLWorkbook.PivotTableInfo pti, IXLPivotTable pt)
         {
-            var values = pti.Fields[PivotField.SourceName].DistinctValues.ToList();
-
             if (predicate == null)
                 return new Int32[] { };
-
+            var values = pti.Fields[PivotField.SourceName].DistinctValues?.ToList();
             return values.Select((Value, Index) => new { Value, Index })
                 .Where(v => predicate.Invoke(v.Value))
                 .Select(v => v.Index)
