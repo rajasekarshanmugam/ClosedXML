@@ -2,7 +2,7 @@ using System;
 
 namespace ClosedXML.Excel
 {
-    public enum XLCustomPropertyType { Text, Number, Date, Boolean}
+    public enum XLCustomPropertyType { Text, Number, Date, Boolean }
     public interface IXLCustomProperty
     {
         String Name { get; set; }

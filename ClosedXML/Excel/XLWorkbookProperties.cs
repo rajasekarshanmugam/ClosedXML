@@ -5,7 +5,7 @@ namespace ClosedXML.Excel
     public class XLWorkbookProperties
     {
         public XLWorkbookProperties()
-        { 
+        {
             Company = null;
             Manager = null;
         }

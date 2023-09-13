@@ -2,7 +2,7 @@ using System;
 
 namespace ClosedXML.Excel
 {
-    internal class XLSortElement: IXLSortElement
+    internal class XLSortElement : IXLSortElement
     {
         public Int32 ElementNumber { get; set; }
         public XLSortOrder SortOrder { get; set; }

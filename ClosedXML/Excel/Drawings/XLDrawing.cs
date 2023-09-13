@@ -2,7 +2,7 @@ using System;
 
 namespace ClosedXML.Excel
 {
-    internal class XLDrawing<T>: IXLDrawing<T>
+    internal class XLDrawing<T> : IXLDrawing<T>
     {
         internal T Container;
         public XLDrawing()

@@ -1,11 +1,8 @@
 using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
 
 namespace ClosedXML.Excel
 {
-    internal class XLPivotValueFormat: IXLPivotValueFormat
+    internal class XLPivotValueFormat : IXLPivotValueFormat
     {
         private readonly XLPivotValue _pivotValue;
         public XLPivotValueFormat(XLPivotValue pivotValue)

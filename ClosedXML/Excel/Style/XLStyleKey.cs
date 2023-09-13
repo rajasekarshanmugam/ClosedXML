@@ -45,7 +45,7 @@ namespace ClosedXML.Excel
         public override string ToString()
         {
             return
-                this == XLStyle.Default.Key ? "Default" : 
+                this == XLStyle.Default.Key ? "Default" :
                 string.Format("Alignment: {0} Border: {1} Fill: {2} Font: {3} IncludeQuotePrefix: {4} NumberFormat: {5} Protection: {6}",
                     Alignment == XLStyle.Default.Key.Alignment ? "Default" : Alignment.ToString(),
                     Border == XLStyle.Default.Key.Border ? "Default" : Border.ToString(),

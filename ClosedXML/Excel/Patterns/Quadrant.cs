@@ -355,7 +355,7 @@ namespace ClosedXML.Excel.Patterns
     /// A generic version of <see cref="Quadrant"/>
     /// </summary>
     internal class Quadrant<T> : Quadrant
-        where T:IXLAddressable
+        where T : IXLAddressable
     {
         public new IEnumerable<T> Ranges => base.Ranges.Cast<T>();
 
@@ -385,7 +385,7 @@ namespace ClosedXML.Excel.Patterns
         }
         public IEnumerable<T> RemoveAll(Predicate<T> predicate)
         {
-            return base.RemoveAll(r => predicate((T) r)).Cast<T>();
+            return base.RemoveAll(r => predicate((T)r)).Cast<T>();
         }
     }
 }

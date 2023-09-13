@@ -77,7 +77,7 @@ namespace ClosedXML.Excel
             if (range == null) throw new ArgumentNullException(nameof(range));
 
             if (range.Worksheet != Worksheet)
-                range = Worksheet.Range(((XLRangeAddress) range.RangeAddress).WithoutWorksheet());
+                range = Worksheet.Range(((XLRangeAddress)range.RangeAddress).WithoutWorksheet());
 
             _ranges.Add(range);
 

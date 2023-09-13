@@ -7,7 +7,7 @@ namespace ClosedXML.Excel
     internal enum XLChartTypeCategory { Bar3D }
     internal enum XLBarOrientation { Vertical, Horizontal }
     internal enum XLBarGrouping { Clustered, Percent, Stacked, Standard }
-    internal class XLChart: XLDrawing<IXLChart>, IXLChart
+    internal class XLChart : XLDrawing<IXLChart>, IXLChart
     {
         internal IXLWorksheet worksheet;
         public XLChart(XLWorksheet worksheet)
@@ -55,13 +55,13 @@ namespace ClosedXML.Excel
             }
         }
 
-        private HashSet<XLChartType> Bar3DCharts = new HashSet<XLChartType> { 
-            XLChartType.BarClustered3D, 
-            XLChartType.BarStacked100Percent3D, 
-            XLChartType.BarStacked3D, 
-            XLChartType.Column3D, 
-            XLChartType.ColumnClustered3D, 
-            XLChartType.ColumnStacked100Percent3D, 
+        private HashSet<XLChartType> Bar3DCharts = new HashSet<XLChartType> {
+            XLChartType.BarClustered3D,
+            XLChartType.BarStacked100Percent3D,
+            XLChartType.BarStacked3D,
+            XLChartType.Column3D,
+            XLChartType.ColumnClustered3D,
+            XLChartType.ColumnStacked100Percent3D,
             XLChartType.ColumnStacked3D
         };
 
@@ -77,20 +77,20 @@ namespace ClosedXML.Excel
         }
 
         private HashSet<XLChartType> HorizontalCharts = new HashSet<XLChartType>{
-            XLChartType.BarClustered, 
-            XLChartType.BarClustered3D, 
-            XLChartType.BarStacked, 
-            XLChartType.BarStacked100Percent, 
-            XLChartType.BarStacked100Percent3D, 
-            XLChartType.BarStacked3D, 
-            XLChartType.ConeHorizontalClustered, 
-            XLChartType.ConeHorizontalStacked, 
-            XLChartType.ConeHorizontalStacked100Percent, 
-            XLChartType.CylinderHorizontalClustered, 
-            XLChartType.CylinderHorizontalStacked, 
-            XLChartType.CylinderHorizontalStacked100Percent, 
-            XLChartType.PyramidHorizontalClustered, 
-            XLChartType.PyramidHorizontalStacked, 
+            XLChartType.BarClustered,
+            XLChartType.BarClustered3D,
+            XLChartType.BarStacked,
+            XLChartType.BarStacked100Percent,
+            XLChartType.BarStacked100Percent3D,
+            XLChartType.BarStacked3D,
+            XLChartType.ConeHorizontalClustered,
+            XLChartType.ConeHorizontalStacked,
+            XLChartType.ConeHorizontalStacked100Percent,
+            XLChartType.CylinderHorizontalClustered,
+            XLChartType.CylinderHorizontalStacked,
+            XLChartType.CylinderHorizontalStacked100Percent,
+            XLChartType.PyramidHorizontalClustered,
+            XLChartType.PyramidHorizontalStacked,
             XLChartType.PyramidHorizontalStacked100Percent
         };
 
@@ -123,7 +123,7 @@ namespace ClosedXML.Excel
             XLChartType.PyramidHorizontalClustered
         };
 
-        public HashSet<XLChartType> PercentCharts = new HashSet<XLChartType>() { 
+        public HashSet<XLChartType> PercentCharts = new HashSet<XLChartType>() {
             XLChartType.AreaStacked100Percent,
             XLChartType.AreaStacked100Percent3D,
             XLChartType.BarStacked100Percent,

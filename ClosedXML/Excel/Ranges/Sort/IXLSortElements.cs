@@ -3,7 +3,7 @@ using System.Collections.Generic;
 
 namespace ClosedXML.Excel
 {
-    public interface IXLSortElements: IEnumerable<IXLSortElement>
+    public interface IXLSortElements : IEnumerable<IXLSortElement>
     {
         void Add(Int32 elementNumber);
         void Add(Int32 elementNumber, XLSortOrder sortOrder);

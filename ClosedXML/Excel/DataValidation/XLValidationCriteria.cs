@@ -102,8 +102,8 @@ namespace ClosedXML.Excel
 
         public void Between(IXLRange minValue, IXLRange maxValue)
         {
-            dataValidation.MinValue =  minValue.RangeAddress.ToStringFixed();
-            dataValidation.MaxValue =  maxValue.RangeAddress.ToStringFixed();
+            dataValidation.MinValue = minValue.RangeAddress.ToStringFixed();
+            dataValidation.MaxValue = maxValue.RangeAddress.ToStringFixed();
             dataValidation.Operator = XLOperator.Between;
         }
 

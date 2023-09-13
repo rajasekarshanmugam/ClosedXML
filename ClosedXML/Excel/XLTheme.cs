@@ -1,6 +1,3 @@
-using System;
-using System.Linq;
-
 namespace ClosedXML.Excel
 {
     internal class XLTheme : IXLTheme
@@ -45,7 +42,7 @@ namespace ClosedXML.Excel
 
                 case XLThemeColor.Accent4:
                     return Accent4;
-                    
+
                 case XLThemeColor.Accent5:
                     return Accent5;
 

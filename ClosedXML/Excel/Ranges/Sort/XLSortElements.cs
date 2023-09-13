@@ -3,7 +3,7 @@ using System.Collections.Generic;
 
 namespace ClosedXML.Excel
 {
-    internal class XLSortElements: IXLSortElements
+    internal class XLSortElements : IXLSortElements
     {
         List<IXLSortElement> elements = new List<IXLSortElement>();
         public void Add(Int32 elementNumber)

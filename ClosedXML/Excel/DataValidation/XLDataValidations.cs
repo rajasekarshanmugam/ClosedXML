@@ -1,6 +1,6 @@
+using ClosedXML.Excel.Ranges.Index;
 using System;
 using System.Collections.Generic;
-using ClosedXML.Excel.Ranges.Index;
 
 namespace ClosedXML.Excel
 {
@@ -82,7 +82,7 @@ namespace ClosedXML.Excel
             if (rangeAddress == null || !rangeAddress.IsValid)
                 return false;
 
-            var candidates = _dataValidationIndex.GetIntersectedRanges((XLRangeAddress) rangeAddress)
+            var candidates = _dataValidationIndex.GetIntersectedRanges((XLRangeAddress)rangeAddress)
                 .Where(c => c.RangeAddress.Contains(rangeAddress.FirstAddress) &&
                             c.RangeAddress.Contains(rangeAddress.LastAddress));
 
@@ -102,7 +102,7 @@ namespace ClosedXML.Excel
             if (rangeAddress == null || !rangeAddress.IsValid)
                 return Enumerable.Empty<IXLDataValidation>();
 
-            return _dataValidationIndex.GetIntersectedRanges((XLRangeAddress) rangeAddress)
+            return _dataValidationIndex.GetIntersectedRanges((XLRangeAddress)rangeAddress)
                 .Select(indexEntry => indexEntry.DataValidation)
                 .Distinct();
         }
@@ -148,7 +148,7 @@ namespace ClosedXML.Excel
         {
             if (range == null) throw new ArgumentNullException(nameof(range));
 
-            var dataValidationsToRemove = _dataValidationIndex.GetIntersectedRanges((XLRangeAddress) range.RangeAddress)
+            var dataValidationsToRemove = _dataValidationIndex.GetIntersectedRanges((XLRangeAddress)range.RangeAddress)
                 .Select(e => e.DataValidation)
                 .Distinct()
                 .ToList();
@@ -233,7 +233,7 @@ namespace ClosedXML.Excel
             try
             {
                 _skipSplittingExistingRanges = true;
-                var entries = _dataValidationIndex.GetIntersectedRanges((XLRangeAddress) rangeAddress)
+                var entries = _dataValidationIndex.GetIntersectedRanges((XLRangeAddress)rangeAddress)
                     .ToList();
 
                 foreach (var entry in entries)
@@ -251,7 +251,7 @@ namespace ClosedXML.Excel
 
         private void ProcessRangeRemoved(IXLRange range)
         {
-            var entry = _dataValidationIndex.GetIntersectedRanges((XLRangeAddress) range.RangeAddress)
+            var entry = _dataValidationIndex.GetIntersectedRanges((XLRangeAddress)range.RangeAddress)
                 .SingleOrDefault(e => Equals(e.RangeAddress, range.RangeAddress));
 
             if (entry != null)

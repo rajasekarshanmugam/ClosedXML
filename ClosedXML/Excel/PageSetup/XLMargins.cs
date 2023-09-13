@@ -2,7 +2,7 @@ using System;
 
 namespace ClosedXML.Excel
 {
-    internal class XLMargins: IXLMargins
+    internal class XLMargins : IXLMargins
     {
         public Double Left { get; set; }
         public Double Right { get; set; }

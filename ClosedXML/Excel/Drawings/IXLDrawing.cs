@@ -2,7 +2,7 @@ using System;
 
 namespace ClosedXML.Excel
 {
-    public enum XLDrawingAnchor { MoveAndSizeWithCells, MoveWithCells, Absolute}
+    public enum XLDrawingAnchor { MoveAndSizeWithCells, MoveWithCells, Absolute }
     public interface IXLDrawing<T>
     {
         Int32 ShapeId { get; }
@@ -10,14 +10,14 @@ namespace ClosedXML.Excel
         Boolean Visible { get; set; }
         T SetVisible();
         T SetVisible(Boolean hidden);
-                
+
         ////String Name { get; set; }
         ////T SetName(String name);
 
         ////String Description { get; set; }
         ////T SetDescription(String description);
 
-        IXLDrawingPosition Position { get;  }
+        IXLDrawingPosition Position { get; }
 
         Int32 ZOrder { get; set; }
         T SetZOrder(Int32 zOrder);

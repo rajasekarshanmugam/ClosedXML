@@ -20,9 +20,9 @@ namespace ClosedXML.Excel
             hashCode = hashCode * -1521134295 + BackgroundColor.GetHashCode();
 
             if (HasNoForeground()) return hashCode;
-                
+
             hashCode = hashCode * -1521134295 + PatternColor.GetHashCode();
-            
+
             return hashCode;
         }
 

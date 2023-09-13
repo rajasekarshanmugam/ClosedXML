@@ -2,7 +2,8 @@ using System;
 
 namespace ClosedXML.Excel
 {
-    public enum XLChartType {
+    public enum XLChartType
+    {
         Area,
         Area3D,
         AreaStacked,
@@ -77,7 +78,7 @@ namespace ClosedXML.Excel
         XYScatterStraightLinesNoMarkers,
         XYScatterStraightLinesWithMarkers
     }
-    public interface IXLChart: IXLDrawing<IXLChart>
+    public interface IXLChart : IXLDrawing<IXLChart>
     {
         Boolean RightAngleAxes { get; set; }
         IXLChart SetRightAngleAxes();

@@ -240,7 +240,7 @@ namespace ClosedXML.Excel
                 }
             }
         }
-        
+
         public override IXLRanges RangesUsed
         {
             get

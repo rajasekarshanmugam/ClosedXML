@@ -1,14 +1,12 @@
 using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
 
 namespace ClosedXML.Excel
 {
     internal class XLIdManager
     {
         private HashSet<Int32> _hash = new HashSet<Int32>();
-        
+
 
         public Int32 GetNext()
         {

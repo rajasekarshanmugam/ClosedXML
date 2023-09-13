@@ -187,7 +187,7 @@ namespace ClosedXML.Excel
         }
 
         public IXLCells CellsUsed(XLCellsUsedOptions options)
-        { 
+        {
             var cells = new XLCells(true, options);
             foreach (XLColumn container in _columns)
                 cells.Add(container.RangeAddress);

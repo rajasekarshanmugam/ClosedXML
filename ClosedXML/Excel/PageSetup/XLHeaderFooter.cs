@@ -5,7 +5,7 @@ namespace ClosedXML.Excel
 {
     using System.Linq;
 
-    internal class XLHeaderFooter: IXLHeaderFooter
+    internal class XLHeaderFooter : IXLHeaderFooter
     {
 
         public XLHeaderFooter(XLWorksheet worksheet)

@@ -88,7 +88,7 @@ namespace ClosedXML.Excel
         #endregion IXLRangeColumns Members
 
         #region IXLStylized Members
-        
+
         public override IEnumerable<IXLStyle> Styles
         {
             get

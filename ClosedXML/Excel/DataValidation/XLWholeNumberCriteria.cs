@@ -4,9 +4,9 @@ namespace ClosedXML.Excel
 {
     public class XLWholeNumberCriteria : XLValidationCriteria
     {
-        public XLWholeNumberCriteria(IXLDataValidation dataValidation): base(dataValidation)
+        public XLWholeNumberCriteria(IXLDataValidation dataValidation) : base(dataValidation)
         {
-            
+
         }
 
         public void EqualTo(Int32 value)

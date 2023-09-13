@@ -13,7 +13,7 @@ namespace ClosedXML.Excel.CalcEngine
             ce.RegisterFunction("IF", 2, 3, If);
             ce.RegisterFunction("TRUE", 0, True);
             ce.RegisterFunction("FALSE", 0, False);
-            ce.RegisterFunction("IFERROR",2,IfError);
+            ce.RegisterFunction("IFERROR", 2, IfError);
         }
 
         static object And(List<Expression> p)

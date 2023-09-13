@@ -1,5 +1,4 @@
 using ClosedXML.Extensions;
-using DocumentFormat.OpenXml;
 using DocumentFormat.OpenXml.Spreadsheet;
 using System;
 
@@ -15,7 +14,7 @@ namespace ClosedXML.Excel
 
             var conditionalFormatValueObject1 = GetConditionalFormatValueObjectByIndex(cf, 1, ConditionalFormatValueObjectValues.Min);
             var conditionalFormatValueObject2 = GetConditionalFormatValueObjectByIndex(cf, 2, ConditionalFormatValueObjectValues.Max);
-            
+
             var color = new Color();
             switch (cf.Colors[1].ColorType)
             {

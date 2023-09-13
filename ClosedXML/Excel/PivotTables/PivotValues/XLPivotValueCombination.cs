@@ -1,11 +1,8 @@
 using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
 
 namespace ClosedXML.Excel
 {
-    internal class XLPivotValueCombination: IXLPivotValueCombination
+    internal class XLPivotValueCombination : IXLPivotValueCombination
     {
         private readonly IXLPivotValue _pivotValue;
         public XLPivotValueCombination(IXLPivotValue pivotValue)

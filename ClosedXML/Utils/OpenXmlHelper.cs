@@ -90,7 +90,7 @@ namespace ClosedXML.Utils
         /// Since these types do not implement a common interface we use dynamic.</param>
         /// <param name="colorCache">The dictionary containing parsed colors to optimize performance.</param>
         /// <returns>The color in ClosedXML format.</returns>
-        private static XLColor ConvertToClosedXMLColor(IColorTypeAdapter openXMLColor, IDictionary<string, Drawing.Color> colorCache )
+        private static XLColor ConvertToClosedXMLColor(IColorTypeAdapter openXMLColor, IDictionary<string, Drawing.Color> colorCache)
         {
             XLColor retVal = null;
             if (openXMLColor != null)

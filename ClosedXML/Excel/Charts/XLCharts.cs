@@ -2,7 +2,7 @@ using System.Collections.Generic;
 
 namespace ClosedXML.Excel
 {
-    internal class XLCharts: IXLCharts
+    internal class XLCharts : IXLCharts
     {
         private List<IXLChart> charts = new List<IXLChart>();
         public IEnumerator<IXLChart> GetEnumerator()

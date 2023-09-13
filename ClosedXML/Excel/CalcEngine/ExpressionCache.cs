@@ -1,6 +1,5 @@
 using System;
 using System.Collections.Generic;
-using System.Text;
 
 namespace ClosedXML.Excel.CalcEngine
 {
@@ -53,7 +52,7 @@ namespace ClosedXML.Excel.CalcEngine
         // remove all dead references from the cache
         void RemoveDeadReferences()
         {
-            for (bool done = false; !done; )
+            for (bool done = false; !done;)
             {
                 done = true;
                 foreach (var k in _dct.Keys)

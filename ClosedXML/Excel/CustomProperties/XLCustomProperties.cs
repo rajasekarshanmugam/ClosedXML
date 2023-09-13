@@ -3,7 +3,7 @@ using System.Collections.Generic;
 
 namespace ClosedXML.Excel
 {
-    internal class XLCustomProperties: IXLCustomProperties, IEnumerable<IXLCustomProperty>
+    internal class XLCustomProperties : IXLCustomProperties, IEnumerable<IXLCustomProperty>
     {
         XLWorkbook workbook;
         public XLCustomProperties(XLWorkbook workbook)
@@ -41,6 +41,6 @@ namespace ClosedXML.Excel
             return GetEnumerator();
         }
 
-      
+
     }
 }

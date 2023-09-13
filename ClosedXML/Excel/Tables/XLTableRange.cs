@@ -248,7 +248,7 @@ namespace ClosedXML.Excel
 
         public new IXLTableRows InsertRowsAbove(int numberOfRows)
         {
-            return XLHelper.InsertRowsWithoutEvents(base.InsertRowsAbove, this, numberOfRows, !Table.ShowTotalsRow );
+            return XLHelper.InsertRowsWithoutEvents(base.InsertRowsAbove, this, numberOfRows, !Table.ShowTotalsRow);
         }
         public new IXLTableRows InsertRowsBelow(int numberOfRows)
         {

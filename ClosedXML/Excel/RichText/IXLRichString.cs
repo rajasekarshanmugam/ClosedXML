@@ -7,7 +7,7 @@ namespace ClosedXML.Excel
         IXLRichString AddText(String text);
         IXLRichString AddNewLine();
     }
-    public interface IXLRichString: IXLFontBase, IEquatable<IXLRichString>, IXLWithRichString
+    public interface IXLRichString : IXLFontBase, IEquatable<IXLRichString>, IXLWithRichString
     {
         String Text { get; set; }
 

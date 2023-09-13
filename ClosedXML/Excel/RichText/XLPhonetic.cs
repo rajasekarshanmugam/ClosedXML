@@ -2,7 +2,7 @@ using System;
 
 namespace ClosedXML.Excel
 {
-    internal class XLPhonetic: IXLPhonetic
+    internal class XLPhonetic : IXLPhonetic
     {
         public XLPhonetic(String text, Int32 start, Int32 end)
         {

@@ -2,7 +2,7 @@ using System.Collections.Generic;
 
 namespace ClosedXML.Excel
 {
-    internal class XLHyperlinks: IXLHyperlinks
+    internal class XLHyperlinks : IXLHyperlinks
     {
         private Dictionary<IXLAddress, XLHyperlink> hyperlinks = new Dictionary<IXLAddress, XLHyperlink>();
         public IEnumerator<XLHyperlink> GetEnumerator()
